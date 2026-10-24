@@ -1,336 +1,1303 @@
 * {
+
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
+
 }
+
+
 
 html {
+
   scroll-behavior: smooth;
+
 }
 
+
+
 body {
+
   font-family: Arial, sans-serif;
+
   background: #f5f7fa;
+
   color: #222;
+
 }
+
+
 
 /* ================= NAVBAR ================= */
 
+
+
 nav {
+
   height: 70px;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   padding: 0 8%;
+
   background: white;
+
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
   position: sticky;
+
   top: 0;
+
   z-index: 1000;
+
 }
+
+
 
 nav h2 {
+
   font-size: 25px;
+
   color: #007bff;
+
 }
+
+
 
 nav div {
+
   display: flex;
+
   gap: 25px;
+
 }
+
+
 
 nav a {
+
   text-decoration: none;
+
   color: #333;
+
   font-weight: 500;
+
   transition: 0.3s;
+
 }
 
+
+
 nav a:hover {
+
   color: #007bff;
+
 }
+
+
 
 /* ================= HOME ================= */
 
+
+
 #home {
+
   min-height: calc(100vh - 70px);
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
   text-align: center;
+
   padding: 40px 20px;
+
   background: linear-gradient(135deg, #f5f7fa, #eaf3ff);
+
 }
+
+
 
 #home h1 {
+
   font-size: 55px;
+
   margin-bottom: 10px;
+
   color: #111;
+
 }
+
+
 
 #home h2 {
+
   font-size: 28px;
+
   margin-bottom: 20px;
+
   color: #007bff;
+
 }
+
+
 
 #home p {
+
   max-width: 600px;
+
   font-size: 18px;
+
   line-height: 1.6;
+
   margin-bottom: 30px;
+
   color: #555;
+
 }
+
+
 
 #home button,
+
 #api-demo button {
+
   padding: 13px 28px;
+
   border: none;
+
   border-radius: 8px;
+
   background: #007bff;
+
   color: white;
+
   font-size: 16px;
+
   cursor: pointer;
+
   transition: 0.3s;
+
 }
 
+
+
 #home button:hover,
+
 #api-demo button:hover {
+
   background: #0056b3;
+
   transform: translateY(-2px);
+
 }
+
+
 
 /* ================= ABOUT ================= */
 
+
+
 #about {
+
   padding: 80px 8%;
+
   text-align: center;
+
   background: white;
+
 }
+
+
 
 #about h2 {
+
   font-size: 35px;
+
   margin-bottom: 25px;
+
 }
 
+
+
 #about p {
+
   max-width: 750px;
+
   margin: auto;
+
   line-height: 1.8;
+
   font-size: 18px;
+
   color: #555;
+
 }
+
+
 
 /* ================= SKILLS ================= */
 
+
+
 #skills {
+
   padding: 80px 8%;
+
   text-align: center;
+
   background: #f5f7fa;
+
 }
+
+
 
 #skills h2,
+
 #projects h2,
+
 #api-demo h2 {
+
   font-size: 35px;
+
   margin-bottom: 40px;
+
 }
+
+
 
 .skills-container {
+
   display: flex;
+
   justify-content: center;
+
   gap: 20px;
+
   flex-wrap: wrap;
+
 }
+
+
 
 .skill-card {
+
   padding: 16px 30px;
+
   border: 1px solid #ddd;
+
   border-radius: 10px;
+
   background: white;
+
   font-weight: bold;
+
   transition: 0.3s;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
 }
 
+
+
 .skill-card:hover {
+
   transform: translateY(-7px);
+
   border-color: #007bff;
+
   color: #007bff;
+
 }
+
+
 
 /* ================= PROJECTS ================= */
 
+
+
 #projects {
+
   padding: 80px 8%;
+
   text-align: center;
+
   background: white;
+
 }
+
+
 
 .projects-container {
+
   display: flex;
+
   justify-content: center;
+
   gap: 25px;
+
   flex-wrap: wrap;
+
 }
+
+
 
 .project-card {
+
   width: 300px;
+
   min-height: 210px;
+
   padding: 25px;
+
   background: #f8f9fb;
+
   border-radius: 12px;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
   text-align: left;
+
   transition: 0.3s;
+
 }
+
+
 
 .project-card:hover {
+
   transform: translateY(-8px);
+
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
 }
+
+
 
 .project-card h3 {
+
   margin-bottom: 15px;
+
   color: #007bff;
+
 }
+
+
 
 .project-card p {
+
   line-height: 1.6;
+
   margin-bottom: 15px;
+
   color: #555;
+
 }
 
+
+
 .project-card small {
+
   font-weight: bold;
+
   color: #333;
+
 }
+
+
 
 /* ================= API ================= */
 
+
+
 #api-demo {
+
   padding: 80px 8%;
+
   text-align: center;
+
   background: #f5f7fa;
+
 }
+
+
 
 .user-card {
+
   width: 300px;
+
   margin: 30px auto;
+
   padding: 25px;
+
   background: white;
+
   border-radius: 12px;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
 }
+
+
 
 .user-card img {
+
   width: 120px;
+
   height: 120px;
+
   border-radius: 50%;
+
   margin-bottom: 15px;
+
 }
+
+
 
 .user-card h3 {
+
   margin-bottom: 10px;
+
 }
 
+
+
 .user-card p {
+
   margin: 8px 0;
+
   color: #555;
+
 }
+
+
 
 /* ================= CONTACT ================= */
 
+
+
 #contact {
+
   padding: 80px 8%;
+
   text-align: center;
+
   background: #111827;
+
   color: white;
+
 }
+
+
 
 #contact h2 {
+
   font-size: 35px;
+
   margin-bottom: 20px;
+
 }
 
+
+
 #contact p {
+
   font-size: 18px;
+
 }
+
+
 
 /* ================= MOBILE ================= */
 
+
+
 @media (max-width: 768px) {
+
   nav {
+
     padding: 0 5%;
+
   }
+
+
 
   nav div {
+
     gap: 12px;
+
   }
+
+
 
   nav a {
+
     font-size: 14px;
+
   }
+
+
 
   #home h1 {
+
     font-size: 40px;
+
   }
+
+
 
   #home h2 {
+
     font-size: 22px;
+
   }
+
+
 
   #home p {
+
     font-size: 16px;
+
   }
+
+
 
   .project-card {
+
     width: 100%;
+
     max-width: 350px;
+
   }
+
 }
+
 .profile-photo {
+
   width: 160px;
+
   height: 160px;
+
   object-fit: cover;
+
   border-radius: 50%;
+
   border: 5px solid white;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
   margin-bottom: 25px;
+
 }
+
 footer {
+
   padding: 20px;
+
   text-align: center;
+
   background: #0f172a;
+
   color: white;
+
   font-size: 14px;
+
 }
+
 .contact-links {
+
   display: flex;
+
   justify-content: center;
+
   gap: 25px;
+
   margin-top: 25px;
+
 }
+
+
 
 .contact-links a {
+
   padding: 12px 25px;
+
   border-radius: 8px;
+
   background: #007bff;
+
   color: white;
+
   text-decoration: none;
+
   transition: 0.3s;
+
 }
+
+
 
 .contact-links a:hover {
+
   background: #0056b3;
+
   transform: translateY(-2px);
+
 }
 
+
+
 @media (max-width: 768px) {
+
   .contact-links {
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 15px;
+
   }
-}0
+
+}
+
+
+
+/* ===== 90s RETRO PORTFOLIO THEME ===== */
+
+
+
+body {
+
+  background: #080616;
+
+  color: #f5efff;
+
+  font-family: "Courier New", monospace;
+
+  background-image:
+
+    radial-gradient(ellipse at 80% 15%, #321052 0%, transparent 40%),
+
+    linear-gradient(#080616, #100725);
+
+}
+
+
+
+/* Retro CRT screen effect */
+
+body::after {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: 9999;
+
+  background: repeating-linear-gradient(
+
+    to bottom,
+
+    transparent 0px,
+
+    transparent 3px,
+
+    rgba(255, 255, 255, 0.025) 4px
+
+  );
+
+}
+
+
+
+/* Navigation */
+
+nav {
+
+  background: rgba(10, 5, 28, 0.96);
+
+  border-bottom: 2px solid #a855f7;
+
+  box-shadow: 0 3px 20px rgba(168, 85, 247, 0.2);
+
+}
+
+
+
+nav h2,
+
+nav a:hover {
+
+  color: #ff4de3;
+
+}
+
+
+
+nav a {
+
+  color: #b9eaff;
+
+}
+
+
+
+/* Hero background */
+
+#home {
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+
+    linear-gradient(
+
+      to bottom,
+
+      rgba(8, 6, 22, 0.1),
+
+      rgba(8, 6, 22, 0.25)
+
+    ),
+
+    radial-gradient(ellipse at 75% 55%, #ed3dba 0%, transparent 20%),
+
+    linear-gradient(180deg, #120a30 0%, #32105c 55%, #09051c 100%);
+
+}
+
+
+
+/* Retro grid floor */
+
+#home::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 32%;
+
+  pointer-events: none;
+
+  background-image:
+
+    linear-gradient(rgba(0, 238, 255, 0.35) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(0, 238, 255, 0.35) 1px, transparent 1px);
+
+  background-size: 42px 24px;
+
+  transform: perspective(180px) rotateX(35deg);
+
+  transform-origin: bottom;
+
+  opacity: 0.5;
+
+}
+
+
+
+#home > * {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+
+#home h1 {
+
+  color: #fff;
+
+  text-shadow: 3px 3px #f000d0, -2px -2px #00eaff;
+
+}
+
+
+
+#home h2 {
+
+  color: #ff4de3;
+
+}
+
+
+
+#home p {
+
+  color: #b9eaff;
+
+}
+
+
+
+/* Profile photo */
+
+.profile-photo {
+
+  border: 3px solid #00eaff;
+
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.4);
+
+}
+
+
+
+/* Retro buttons */
+
+.home-buttons button,
+
+#api-demo button {
+
+  background: #281064;
+
+  color: #fff;
+
+  border: 2px solid #00eaff;
+
+  border-radius: 2px;
+
+  box-shadow: 4px 4px 0 #e832c8;
+
+}
+
+
+
+.home-buttons button:hover,
+
+#api-demo button:hover {
+
+  background: #a20ec5;
+
+  transform: translate(-2px, -2px);
+
+}
+
+
+
+.secondary-btn {
+
+  background: #170d35 !important;
+
+}
+
+
+
+.resume-btn {
+
+  background: #163c50 !important;
+
+}
+
+
+
+/* Other sections */
+
+#about,
+
+#projects {
+
+  background: #100a24;
+
+  color: #f5efff;
+
+}
+
+
+
+#skills,
+
+#api-demo {
+
+  background: #0a0718;
+
+  color: #f5efff;
+
+}
+
+
+
+#about h2,
+
+#skills h2,
+
+#projects h2,
+
+#api-demo h2 {
+
+  color: #00eaff;
+
+  text-shadow: 2px 2px #8b2be2;
+
+}
+
+
+
+#about p,
+
+.project-card p {
+
+  color: #c9c1e8;
+
+}
+
+
+
+/* Skill and project cards */
+
+.skill-card,
+
+.project-card,
+
+.user-card {
+
+  background: #17102e;
+
+  color: #f5efff;
+
+  border: 1px solid #7541b8;
+
+  border-radius: 3px;
+
+  box-shadow: 4px 4px 0 rgba(232, 50, 200, 0.35);
+
+}
+
+
+
+.skill-card:hover,
+
+.project-card:hover {
+
+  border-color: #00eaff;
+
+  color: #00eaff;
+
+  transform: translateY(-5px);
+
+}
+
+
+
+.project-card h3 {
+
+  color: #ff4de3;
+
+}
+
+
+
+.project-card small {
+
+  color: #9defff;
+
+}
+
+
+
+.user-card p {
+
+  color: #c9c1e8;
+
+}
+
+
+
+/* Contact and footer */
+
+#contact {
+
+  background: #160a2e;
+
+  border-top: 2px solid #ff4de3;
+
+}
+
+
+
+.contact-links a {
+
+  background: #281064;
+
+  border: 1px solid #00eaff;
+
+  border-radius: 2px;
+
+}
+
+
+
+footer {
+
+  background: #080616;
+
+  border-top: 1px solid #7541b8;
+
+  color: #b9eaff;
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  nav {
+
+    background: #100a24;
+
+  }
+
+
+
+  #home::after {
+
+    height: 20%;
+
+    background-size: 30px 20px;
+
+  }
+
+
+
+  #home h1 {
+
+    font-size: 34px;
+
+  }
+
+}
+
+
+
+/* ===== 90s WINDOWS RETRO DETAILS ===== */
+
+
+
+.skill-card,
+
+.project-card,
+
+.user-card {
+
+  border: 2px solid #b967ff;
+
+  border-radius: 0;
+
+  box-shadow:
+
+    3px 3px 0 #ff4de3,
+
+    inset 1px 1px 0 rgba(255, 255, 255, 0.12);
+
+}
+
+
+
+.project-card h3 {
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px dashed #00eaff;
+
+}
+
+
+
+nav {
+
+  border-bottom: 2px solid #00eaff;
+
+}
+
+
+
+nav h2 {
+
+  font-family: "Courier New", monospace;
+
+  text-shadow: 2px 2px #5b21b6;
+
+}
+
+
+
+#about,
+
+#skills,
+
+#projects,
+
+#api-demo,
+
+#contact {
+
+  position: relative;
+
+}
+
+
+
+#about h2::before,
+
+#skills h2::before,
+
+#projects h2::before {
+
+  content: "  ";
+
+  color: #ff4de3;
+
+}
+
+
+
+.home-buttons button,
+
+#api-demo button,
+
+.contact-links a {
+
+  font-family: "Courier New", monospace;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+}
+
+
+
+.home-buttons button:active,
+
+#api-demo button:active {
+
+  transform: translate(2px, 2px);
+
+  box-shadow: none;
+
+}
+
+
+
+
+
+/* ===== RETRO CONTACT FORM ===== */
+
+#contact > p {
+  color: #b9eaff;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+  padding: 25px;
+  background: #100a24;
+  border: 2px solid #b967ff;
+  box-shadow: 5px 5px 0 #ff4de3;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  background: #080616;
+  color: #f5efff;
+  border: 1px solid #00eaff;
+  border-radius: 0;
+  outline: none;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a99acb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff4de3;
+  box-shadow: 0 0 10px rgba(255, 77, 227, 0.3);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-form button {
+  padding: 14px 20px;
+  background: #281064;
+  color: white;
+  border: 2px solid #00eaff;
+  border-radius: 0;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #e832c8;
+  transition: 0.2s;
+}
+
+.contact-form button:hover {
+  background: #a20ec5;
+  transform: translate(-2px, -2px);
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-form p[role="status"] {
+  color: #00eaff;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 16px;
+    box-shadow: 3px 3px 0 #ff4de3;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+}
